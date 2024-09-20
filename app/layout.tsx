@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './globals.css';
 
 import type { Metadata, Viewport } from 'next';
@@ -28,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='ru'>
+    <html data-bs-theme='dark' lang='ru'>
       <body className={`${fontSans.variable}`}>
         <Providers>{children}</Providers>
       </body>
