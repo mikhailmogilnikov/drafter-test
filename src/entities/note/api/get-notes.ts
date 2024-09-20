@@ -1,4 +1,5 @@
-import { INote } from '@/src/entities/note';
+import { INote } from '../model/note.type';
+
 import { API_URL } from '@/src/shared/config/urls';
 
 export const getNotesApi = () =>

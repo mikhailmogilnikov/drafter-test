@@ -1,0 +1,12 @@
+.list-wrapper {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.controls-wrapper {
+  display: flex;
+}
+

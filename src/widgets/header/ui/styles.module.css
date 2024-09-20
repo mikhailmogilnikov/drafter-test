@@ -1,0 +1,10 @@
+.wrapper {
+  width: 100%;
+  position: fixed;
+  height: 64px;
+  border-bottom: 1px solid rgb(73, 73, 73);
+}
+
+.separator {
+  height: 64px;
+}

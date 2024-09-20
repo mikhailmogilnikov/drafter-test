@@ -9,9 +9,9 @@ export default function Error({ error, reset }: { error: Error; reset: () => voi
   }, [error]);
 
   return (
-    <div>
+    <div className='container p-4'>
       <h2>Что то пошло не так!</h2>
-      <button onClick={() => reset()}>Попробовать снова</button>
+      <button className='btn btn-secondary mt-2' onClick={() => reset()}>Попробовать снова</button>
     </div>
   );
 }

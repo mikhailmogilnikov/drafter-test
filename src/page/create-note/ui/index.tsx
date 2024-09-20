@@ -1,3 +1,10 @@
+import { AddNoteForm } from '@/src/features/add-note';
+
 export const CreateNotePage = () => {
-  return <main>create note</main>;
+  return (
+    <section>
+      <h1>Новая заметка</h1>
+      <AddNoteForm />
+    </section>
+  );
 };

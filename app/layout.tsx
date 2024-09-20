@@ -7,6 +7,7 @@ import { Providers } from './providers';
 
 import { siteConfig } from '@/src/shared/config/site';
 import { fontSans } from '@/src/shared/config/fonts';
+import { Header } from '@/src/widgets/header';
 
 export const metadata: Metadata = {
   title: {
@@ -31,7 +32,10 @@ export default function RootLayout({
   return (
     <html data-bs-theme='dark' lang='ru'>
       <body className={`${fontSans.variable}`}>
-        <Providers>{children}</Providers>
+        <Providers>
+          <Header />
+          {children}
+        </Providers>
       </body>
     </html>
   );
