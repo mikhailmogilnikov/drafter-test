@@ -2,8 +2,15 @@
   "notes": [
     {
       "id": 1,
-      "name": "test",
-      "description": "test",
+      "name": "Тестовая запись 1",
+      "description": "Описание 1",
+      "createdAt": "1234",
+      "updatedAt": "12356"
+    },
+    {
+      "id": 2,
+      "name": "Тестовая запись 2",
+      "description": "Описание 2",
       "createdAt": "1234",
       "updatedAt": "12356"
     }

@@ -1,14 +1,12 @@
-import { INote } from '@/src/entities/note';
-import { API_URL } from '@/src/shared/config/urls';
+import { getNotesApi } from '../api/get-notes';
 
 export const NotesList = async () => {
-  const resp = await fetch(API_URL + '/notes', { next: { revalidate: 0 } });
-  const notes: INote[] = await resp.json();
+  const notes = await getNotesApi();
 
   return (
     <div>
       {notes.map((note) => {
-        return <>{note.name}</>;
+        return <h3 key={note.id}>{note.name}</h3>;
       })}
     </div>
   );
