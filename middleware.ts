@@ -3,12 +3,11 @@ import type { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
 
 export function middleware(request: NextRequest) {
-  const { url, nextUrl } = request;
-  const origin = nextUrl.origin;
+  const { pathname, origin } = request.nextUrl;
 
-  console.log(url, origin);
-
-  
+  if (pathname === '/') {
+    return NextResponse.redirect(origin + '/notes');
+  }
 
   return NextResponse.next();
 }

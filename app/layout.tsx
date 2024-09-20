@@ -3,7 +3,6 @@ import './globals.css';
 import type { Metadata, Viewport } from 'next';
 
 import { Providers } from './providers';
-import { store } from './_store';
 
 import { siteConfig } from '@/src/shared/config/site';
 import { fontSans } from '@/src/shared/config/fonts';
@@ -31,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang='ru'>
       <body className={`${fontSans.variable}`}>
-        <Providers store={store}>{children}</Providers>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

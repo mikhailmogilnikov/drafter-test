@@ -1,3 +1,9 @@
+import { NotesList } from '@/src/widgets/notes-list';
+
 export const NotesPage = () => {
-  return <main>notes</main>;
+  return (
+    <main>
+      <NotesList />
+    </main>
+  );
 };
