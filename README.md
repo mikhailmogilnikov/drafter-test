@@ -33,6 +33,7 @@ npm run start
 - Подключен CI (Github Actions)
 - Архитектура FSD
 - Стек: TypeScript, Next.js, CSS Modules, Bootstrap
+- Адаптация под все виды экранов
 
 ### Документация API
 

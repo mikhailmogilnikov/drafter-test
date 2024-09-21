@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import { NoteProp } from '../../note/ui';
 
 import { EditNoteForm } from '@/src/features/edit-note';
@@ -8,7 +10,10 @@ export const EditNotePage = async ({ noteId }: NoteProp) => {
 
   return (
     <section>
-      <h1>Редактировать заметку</h1>
+      <Link className='text-primary' href={`/notes/${noteId}`}>
+        {'<'} Вернуться к заметке
+      </Link>
+      <h1 className='mt-3'>Редактировать заметку</h1>
       <EditNoteForm note={note} />
     </section>
   );

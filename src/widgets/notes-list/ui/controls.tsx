@@ -1,9 +1,9 @@
-import { AddNoteButton } from '@/src/features/add-note';
+import { SortNotesDropdown, SortNotesProps } from '@/src/features/sort-notes';
 
-export const NotesListControls = () => {
+export const NotesListControls = ({ sortType }: SortNotesProps) => {
   return (
     <div className='my-4'>
-      <AddNoteButton />
+      <SortNotesDropdown sortType={sortType} />
     </div>
   );
 };
