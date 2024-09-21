@@ -3,6 +3,8 @@ import path from 'path';
 
 import { NextResponse } from 'next/server';
 
+export const dynamic = 'force-dynamic';
+
 const dbPath = path.join(process.cwd(), 'database.json');
 
 const readDatabase = () => {

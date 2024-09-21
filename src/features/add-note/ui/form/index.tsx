@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-autofocus */
+
 import styles from './styles.module.css';
 
 export const AddNoteForm = () => {
@@ -6,6 +8,7 @@ export const AddNoteForm = () => {
       <div className='form-group'>
         <label htmlFor='name'>Название</label>
         <input
+          autoFocus
           className='form-control'
           id='name'
           name='name'
