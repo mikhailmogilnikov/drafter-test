@@ -7,17 +7,22 @@
 git clone git@github.com:mikhailmogilnikov/drafter-test.git
 ```
 
-2) Установите зависимости
+2) Перейдите в папку проекта
+```bash
+cd drafter-test
+```
+
+3) Установите зависимости
 ```bash
 npm install
 ```
 
-3) Соберите проект
+4) Соберите проект
 ```bash
 npm run build
 ```
 
-4) Запустите проект
+5) Запустите проект
 ```bash
 npm run start
 ```
